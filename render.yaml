@@ -2,7 +2,7 @@ services:
   - type: web
     name: my-web-service
     env: static
-    staticPublishPath: public # Adjust to your static file directory
+    staticPublishPath: ./
     routes:
       - type: rewrite
         source: "/*"
