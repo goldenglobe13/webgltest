@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: my-web-service
+    env: static
+    staticPublishPath: public # Adjust to your static file directory
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: "/"
+      - type: header
+        path: "*.gz"
+        headers:
+          - key: Content-Encoding
+            value: gzip
