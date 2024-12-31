@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-web-service
+    name: webgltest
     env: static
     staticPublishPath: ./
     routes:
