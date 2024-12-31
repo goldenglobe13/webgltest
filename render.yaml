@@ -2,7 +2,7 @@ services:
   - type: web
     name: webgltest
     env: static
-    staticPublishPath: ./
+    staticPublishPath: "/"
     routes:
       - type: rewrite
         source: "/*"
